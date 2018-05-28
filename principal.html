@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Recaptcha API.js -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+    <style>
+    /**/
+
+        @media (max-width: 740px) {
+
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                padding-right: 10;
+                margin
+                height: 700px; 
+            } 
+        }
+
+     
+
+
+        .btn-floating {
+            -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+            width: 45px;
+            height: 45px;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            overflow: hidden;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            margin: 10px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            padding: 0;
+            margin-top: 6rem;
+            background-color: #464646;
+        }   
+
+        .btn-floating i {
+            font-size: 1.25rem;
+            line-height: 47px;
+            display: inline-block;
+            width: inherit;
+            text-align: center;
+            color: #fff;
+        }
+
+.btn .fa {
+    position: relative;
+    font-size: .9rem;
+}
+
+
+
+.streak1 {
+    background: #f7d27f;
+    height: 180px;
+}
+
+
+
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+
+        .display-2 {
+            font-size: 5.5rem;
+        }
+
+        .btn .fa {
+            position: relative;
+            font-size: .9rem;
+        }
+
+        .c {
+
+            position: 100px 100px;
+        }
+
+        .mb-5, .my-5 {
+            margin-bottom: 3rem!important;
+        }
+        .mt-5, .my-5 {
+            margin-top: 3rem!important;
+        }
+
+        .pb-5, .py-5 {
+            padding-bottom: 3rem!important;
+        }
+
+
+        .developer mark {
+            padding: .4rem 6rem;
+            background-color: rgba(248,192,67,.7);
+        }     
+
+    </style>
+
+</head>
+
+<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
+
+    <!--Navigation & Intro-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar grey darken-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">Moises</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#about" data-offset="100">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#skills" data-offset="100">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#works" data-offset="100">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#contact" data-offset="100">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-facebook light-green-text-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter light-green-text-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-instagram light-green-text-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Main Navigation-->
+        
+        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(img/forest1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-white-light">
+                <div class="container flex-center text-center">
+
+                  <div class="row mt-5">
+                    <div class="col-md-12 wow fadeIn mb-2">
+                      <h1 class="display-2 mb-4 dark-grey-text wow fadeIn animated" style="visibility: visible; animation-name: fadeIn; font-size: 75px">Yo soy <strong>Moisés David</strong></h1>
+                      <h5 class="font-up font-bold wow fadeIn" data-wow-delay="0.4s"><mark>Ingeniero de Sistemas & Desarrollador Backend</mark></h5>
+                      <a href="#about" class="grey darken-3 btn btn-floating btn-large wow fadeIn waves-effect waves-light animated" data-wow-delay="0.4s" data-offset="100" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <!--Main Navigation--> 
+
+    <!--Main layout-->
+    <main>
+
+        <!-- First container -->
+        <div class="container">
+            
+           <section id="about" class="section feature-box mb-5">
+
+            <!-- Section title -->
+            <h2 class="text-center text-uppercase my-5 pt-5 wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">SOBRE <strong>MÍ</strong></h2>
+                    
+            <p class="text-center w-responsive mx-auto wow fadeIn my-5" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Desarrolador Web con más de 3 años de experiencia. Proactivo, optimista y solidario, con capacidad de adaptarse a los cambios, trabajar en equipo y colaborar activamente para el logro de los objetivos organizacionales. Con la habilidad de explorar métodos alternativos para la resolución de problemas desde una perspectiva lógica, crítica y amplia.</p>
+                
+                <!-- First row -->
+                <div class="row features-big text-center wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+                    
+                    <!-- First column -->
+                    <div class="col-md-4 mb-5">
+                        
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-laptop dark-grey- fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Freelancer</h5>
+                            <p class="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <!--/.Panel-->
+                        
+                    </div>
+                    <!-- /First column -->   
+        
+                    <!-- Second column -->
+                    <div class="col-md-4 mb-5">
+                        
+                        <!--Panel-->
+                        <div class="card card-body orange accent-1">
+                            <i class="fa fa-code dark-grey-text fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Desarrollador</h5>
+                            <p class="dark-grey-text">
+Escribiene el código fuente de un programa informático, es
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <!--/.Panel-->
+                        
+                    </div>
+                    <!-- /.Second column -->
+
+                    <!-- Third column -->
+                    <div class="col-md-4 mb-5">
+                        
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-pencil dark-grey-text fa-3x mb-4" aria-hidden="true"></i>
+                            <h5 class="font-weight-bold text-uppercase mb-4">Designer</h5>
+                            <p class="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <!--/.Panel-->
+                        
+                    </div>
+                    <!-- /.Third column -->
+
+                </div>
+                <!-- /.First row -->
+
+            </section>
+           
+        </div>
+        <!-- /.First container -->
+
+        <!--Second container-->
+        <div class="container-fluid" style="background-color: #f3f3f5;">
+            <div class="container py-4 pt-4">
+                    
+                <!-- Second section -->
+                <section id="skills">
+                    
+                    <!-- First row -->
+                    <div class="row py-5">
+            
+                        <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+                        
+                            <!--Section heading-->
+                            <div class="d-flex justify-content-start">
+                                <h4 class="text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Mi <strong>experiencia</strong></h4>
+                            </div>
+                           
+                                <!--Description-->
+                                <blockquote class="blockquote bq-warning mb-3">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Programador - IGA </h5> 
+                                    </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">Julio, 2017 - Presente (11 meses)</p>
+                                    <p class="mb-0 ml-1 light-grey-text" style="font-size: 15px;">• Desarrollo de aplicaciones web en entorno WAMP y LAMP, con Framework CodeIgniter.
+                                    <br>
+                                    • Uso e implementación de APIs como Google Analytics, Facebook Marketing, entre otras.
+                                    <br>
+                                    • Administración, revisión, control y optimización de las bases de datos.
+                                    <br>
+                                    • Asistencia remota.
+                                    </p>
+                                </blockquote>
+                            
+                                <blockquote class="blockquote bq-warning mb-3">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Teach Leader - Hispanos Soluciones, C.A </h5> 
+                                    </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">Enero, 2017 - Junio 2017 (6 meses)</p>
+                                    <p class="mb-0 ml-1 light-grey-text" style="font-size: 15px;">• Gestión del flujo diario, semanal y quincenal de las actividades desarrolladas.
+                                    <br>
+                                    • Creación de reportes para informar sobre el progreso del equipo. 
+                                    <br>
+                                    • Proveer de capacitación y entrenamiento a los miembros del equipo.
+                                    <br>
+                                    </p>
+                                </blockquote>
+
+                                <blockquote class="blockquote bq-warning mb-3">
+                                    <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                        <h5 class="font-weight-bold mb-3">Programador - Hispanos Soluciones, C.A </h5> 
+                                    </div>
+                                    <p class="font-weight-bold ml-1 dark-grey-text mb-2">Enero, 2017 - Junio 2017 (6 meses)</p>
+                                    <p class="mb-0 ml-1 light-grey-text" style="font-size: 15px;">• Desarrollo y soporte de aplicaciones web con el lenguaje de programación PHP y el framework Codeigniter.
+                                    <br>
+                                    • Diseño e implementación de bases de datos relacionales con MySQL.
+                                    </p>
+                                </blockquote>
+
+                        </div>
+                        <!--/First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-5 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+                            <!--Second heading-->
+                            <div class="d-flex justify-content-start">
+                                <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Development <strong>Skills</strong></h4>
+                            </div>
+                                
+                                <!--Description-->
+                                <p class="black-text font-up font-bold pt-3" align="justify">PHP</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                <p class="black-text font-up font-bold pt-3" align="justify">Codeigniter</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>   
+
+                                <p class="black-text font-up font-bold pt-3" align="justify">Javascript</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                                                
+
+
+                                <p class="black-text font-up font-bold pt-3" align="justify">GIT</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                <p class="black-text font-up font-bold pt-3" align="justify">HTML5</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                
+                                <p class="black-text font-up font-bold pt-3" align="justify">Bootstrap</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                <p class="black-text font-up font-bold pt-3" align="justify">CSS3</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                
+                                <p class="black-text font-up font-bold" align="justify">Laravel</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                <p class="black-text font-up font-bold" align="justify">Node</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                <p class="black-text font-up font-bold" align="justify">Angular</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                    
+
+                                <p class="black-text font-up font-bold" align="justify">Wordpress</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                    
+
+                        </div>
+                        <!--/Second column-->
+
+                    </div>
+                    <!--/First row-->
+
+                </section>
+                <!-- /.Second section -->
+              
+          </div>
+        </div>
+        <!--/Second container-->
+   
+        <!-- Third container -->
+        <div class="container">
+
+            <!-- Section: Testimonials v.3 -->
+            <section class="team-section text-center my-5">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold my-5">Testimonios</h2>
+            <!-- Section description -->
+
+                <!--Grid row-->
+                <div class="row text-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-md-0 mb-5">
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar mx-auto">
+                                <img src="img/erick.jpg" class="rounded-circle z-depth-1 img-fluid" height="200" width="200">
+                            </div>
+                            <!--Content-->
+                            <h4 class="font-weight-bold dark-grey-text mt-4">Erick Bravo</h4>
+                            <h6 class="font-weight-bold blue-text my-3">PHP Backend Developer 
+                                <a href="" class="dark-grey-text">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </h6> 
+                            <p class="font-weight-normal dark-grey-text">
+                                <i class="fa fa-quote-left pr-2"></i>Es una persona constante, con gran capacidad de llevar grandes responsabilidades trabajando desde la excelencia.</p>
+                            
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-full"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-md-0 mb-5">
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar mx-auto">
+                              <img src="img/enrique.jpg" class="rounded-circle z-depth-1 img-fluid" height="200" width="200">
+                            </div>
+                            <!--Content-->
+                            <h4 class="font-weight-bold dark-grey-text mt-4">Enrique Moya</h4>
+                            <h6 class="font-weight-bold blue-text my-3">Especialista Telecom
+                                <a href="" class="dark-grey-text">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </h6>
+                            <p class="font-weight-normal dark-grey-text">
+                              <i class="fa fa-quote-left pr-2"></i>Es un fantástico profesional. Destacaría principalmente de él su flexibilidad para adaptarse a los requerimientos que le son dados.</p>
+
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar mx-auto">
+                              <img src="img/natalia.jpg" class="rounded-circle z-depth-1 img-fluid" height="200" width="200">
+                            </div>
+                            <!--Content-->
+                            <h4 class="font-weight-bold dark-grey-text mt-4">Natalia Morán</h4>
+                            <h6 class="font-weight-bold blue-text my-3">Consultor en Seguridad Informática y Sysadmin
+                                <a href="" class="dark-grey-text">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </h6>
+                            <p class="font-weight-normal dark-grey-text">
+                              <i class="fa fa-quote-left pr-2"></i>Moisés es un profesional excelente. Posee grandes habilidades, aptitudes, trabajo constante y comprometido con lo que hace.</p>
+
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-o"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!-- Section: Testimonials v.3 -->
+
+        </div>    
+        <!-- /.Third container -->      
+        
+
+
+
+
+          <!--Second container-->
+        <div class="container-fluid" style="background-color: #f3f3f5;">
+            <div class="container py-4 pt-4">
+                    
+                
+            <!-- Projects section v.2 -->
+            <section class="text-center my-5">
+
+              <!-- Section heading -->
+              <h2 class="h1-responsive font-weight-bold my-5">Portafolio</h2>
+              <!-- Section description -->
+              <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+              <!-- Grid row -->
+              <div class="row d-flex justify-content-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-xl-5 mb-4">
+                  <!--Featured image-->
+                  <div class="view overlay rounded z-depth-2" style="height: 296.84px">
+                    <img src="img/p1.png" class="img-fluid" alt="Sample project image" style="height: 296.84px">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Excerpt-->
+                  <div class="card-body">
+                    <h4 class="font-weight-bold mb-3">Sistema Distribución</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                    <a class="btn btn-success btn-rounded btn-md"> Ver Más</a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-xl-5 mb-4">
+                  <!--Featured image-->
+                  <div class="" style="height: 296.84px">
+                    <img src="img/p2.png" class="img-fluid" alt="Sample project image" style="height: 296.84px">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Excerpt-->
+                  <div class="card-body">
+                    <h4 class="font-weight-bold mb-3">Sistema Igacloud</h4>
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                    <a class="btn btn-success btn-rounded btn-md"> Ver Más</a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->             
+
+            </section>
+            <!-- Projects section v.2 -->
+            
+        
+              
+          </div>
+        </div>
+        <!--/Second container-->
+
+
+
+        <!-- Contact form -->
+        <div id="contact" class="container">
+            <!-- Section: Contact v.2 -->
+            <section class="my-5">
+
+              <!-- Section heading -->
+              <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Contactame<strong></strong></h2>
+              <!-- Section description -->
+              <p class="text-center w-responsive mx-auto mb-5">Por favor, rellena este formulario para informarme sobre tu idea de negocio, y te responderé en breve.</p>
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-9 mb-md-0 mb-5">
+
+                    <form id="form1" class="" action="" method="post">
+                    <!-- Grid row -->
+                    <div class="row">
+
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="contact-name" class="form-control" required="">
+                          <label for="contact-name" class="">Tú nombre</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="email" id="contact-email" class="form-control" required="">
+                          <label for="contact-email" class="">Tú email</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                      <!-- Grid column -->
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="contact-subject" class="form-control" required="">
+                          <label for="contact-subject" class="">Asunto</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                      <!-- Grid column -->
+                      <div class="col-md-12">
+                        <div class="md-form">
+                          <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3" required=""></textarea>
+                          <label for="contact-message">Mensaje</label>
+                        </div>
+                      </div>
+
+                      <!-- Grid column -->
+
+                      <div class="g-recaptcha" data-sitekey="6LcGxVsUAAAAAHOSY3juYLxpS0SjNhUXHxo11T4c"></div>
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <div class="text-center text-md-left">
+                        <input type="submit" id="send" class="btn btn-indigo btn-md">
+                    </div>
+
+                </form>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <i class="fa fa-map-marker fa-2x"></i>
+                      <p>Carúpano, Venezuela</p>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone fa-2x mt-4"></i>
+                      <p>+58-4129463768</p>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope fa-2x mt-4"></i>
+                      <p class="mb-0">moisesdavidaaron@gmail.com</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </section>
+            <!-- Section: Contact v.2 -->
+
+
+        </div>
+        <!-- Contact form -->
+
+
+        <div class="streak1">
+            <div class="flex-center">
+                <ul class="list-unstyled">
+                    <li><h2 class="h2-responsive mt-5 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">¿Quieres un proyecto sobresaliente?</h2></li>
+                    <li><h5 class="h5-responsive wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">¡Sólo envíame un mensaje!</h5></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- /.Customers carousel -->
+
+
+<!-- Button trigger modal-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalYT">Launch modal</button>
+
+<!--Modal: modalYT-->
+<div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+
+
+        </div>
+        <!--/.Content-->
+
+    </div>
+</div>
+<!--Modal: modalYT-->
+
+                        
+</main>
+<!--/Main layout-->
+
+
+
+
+
+    <!-- Scrollspy 
+    <div class="dotted-scrollspy clearfix d-none d-sm-block grey darken-3" id="myScrollspy">
+        <ul class="nav smooth-scroll flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#works"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+        </ul>
+    </div>-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
+    <script>
+        // initialize scrollspy
+        $('body').scrollspy({
+            target: '.dotted-scrollspy'
+        });
+
+        $('#myScrollspy').on('activate.bs.scrollspy', function () {
+        // do something…
+        })
+
+
+        // initialize lightbox
+        $(function () {
+            $("#mdb-lightbox-ui").load("mdb-lightbox-ui.html");
+        });
+
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        /* WOW.js init */
+        new WOW().init();
+
+        $(document).ready(function(){ 
+            
+            $('#send').click(function(){
+
+                var name = $('#contact-name').val();
+                var email = $('#contact-email').val();
+                var subject = $('#contact-subject').val();
+                var message = $('#contact-message').val();
+
+                $.ajax({
+                    type:"POST",
+                    url: "send-email.php",
+                    data: {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message
+                    }
+                }).done(function() {
+                    alert( "success" );
+                })
+                .fail(function() {
+                    alert( "error" );
+                })
+                .always(function() {
+                    alert( "complete" );
+                });
+
+            });
+        });
+
+    </script>
+
+</body>
+</html>
